@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Viewer</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="pdfViewer" src="" title="Resume Viewer"></iframe>
+
+  <script>
+    // JavaScript to set the PDF source dynamically
+    const pdfViewer = document.getElementById('pdfViewer');
+    const resumePdfUrl = 'Pravin Bambale 5.5 years Angualr Developer.pdf'; // Replace with the path to your PDF file
+    pdfViewer.src = resumePdfUrl;
+  </script>
+</body>
+</html>
